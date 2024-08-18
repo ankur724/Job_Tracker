@@ -1,4 +1,5 @@
-**Job Application Tracker Chrome Extension **- Version 1.0
+Job Application Tracker Chrome Extension- Version 1.0
+
 Overview
 The Job Application Tracker is a Chrome extension designed to help users keep track of their job applications across various job sites. With this extension, you can add job fields like "Indeed" or "Naukri," increment or decrement the application count, and track your progress throughout the day. At the end of the day, you can view a summary of your job applications.
 
