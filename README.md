@@ -40,18 +40,10 @@ View Summary:
 
 Click "Show Summary" to view the total job applications for the day.
 
-Scrrenshots
-Increment/Decrement Job Count
-![Screenshot (3305)](https://github.com/user-attachments/assets/835d0a50-1fa9-434b-9257-64d6cbf2691b)
-
-Add field
-![Screenshot (3306)](https://github.com/user-attachments/assets/9bb4f498-238d-4ff8-8af1-21be10b0b69b)
-
-Ressult show summary
-![Screenshot (3307)](https://github.com/user-attachments/assets/a8754b0a-4536-42dd-bfdb-b4514a0e11dd)
-
-
-
+<video width="320" height="240" controls>
+  <source src="Demo_tutorial.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 In future versions, you can load and visualize this data on an external website.
 Future Development
