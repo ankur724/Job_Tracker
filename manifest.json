@@ -1,15 +1,21 @@
 {
-    "manifest_version": 3,
-    "name": "Job Application Tracker",
-    "version": "1.0",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-      }
-    },
-    "permissions": ["storage"]
+  "manifest_version": 3,
+  "name": "Job Tracker",
+  "version": "1.0",
+  "description": "Track and download job applications.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
-  
+}

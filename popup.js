@@ -7,6 +7,7 @@ const newDayButton = document.getElementById('new-day');
 
 // Get current date
 const today = new Date().toLocaleDateString();
+let dataSaved = false; // Track if data has been saved
 
 // Load saved data and check if it's a new day
 chrome.storage.local.get(['jobFields', 'lastSavedDate', 'weeklyData'], (result) => {
@@ -17,8 +18,10 @@ chrome.storage.local.get(['jobFields', 'lastSavedDate', 'weeklyData'], (result) 
         // Save yesterday's data and reset for today
         saveDataForDay(lastSavedDate, jobFields);
         chrome.storage.local.set({ jobFields: [], lastSavedDate: today });
+        downloadExcelButton.disabled = false;
     } else {
         jobFields.forEach((field, index) => addField(field.name, field.count, index));
+        downloadExcelButton.disabled = Object.keys(result.weeklyData || {}).length === 0;
     }
 });
 
@@ -105,6 +108,7 @@ function saveDataForDay(date, jobFields) {
         const weeklyData = result.weeklyData || {};
         weeklyData[date] = jobFields;
         chrome.storage.local.set({ weeklyData });
+        dataSaved = true; // Mark data as saved
     });
 }
 
@@ -130,8 +134,18 @@ showSummaryButton.onclick = () => {
 
 // Function to download the data as an Excel file
 downloadExcelButton.onclick = () => {
+    if (!dataSaved) {
+        alert("Please save the data before downloading.");
+        return;
+    }
+
     chrome.storage.local.get(['weeklyData'], (result) => {
         const weeklyData = result.weeklyData || {};
+
+        if (Object.keys(weeklyData).length === 0) {
+            alert("No data available to download.");
+            return;
+        }
 
         // Create a new workbook and worksheet
         const wb = XLSX.utils.book_new();
@@ -173,5 +187,8 @@ newDayButton.onclick = () => {
 
         // Clear job fields on the UI
         jobFieldsContainer.innerHTML = '';
+
+        // Enable the download button
+        downloadExcelButton.disabled = false;
     });
 };
