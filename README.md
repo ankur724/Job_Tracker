@@ -44,6 +44,22 @@ Data Export: Export job application data to a Excel format
 
 ## Screenshoot
 
+# Defalut Page
+![Screenshot (3308)](https://github.com/user-attachments/assets/2da3ef64-bcd8-4c57-8830-4e2bf2010802)
+
+# Add Field
+![Screenshot (3309)](https://github.com/user-attachments/assets/889df6fd-0052-4753-a5a7-5cd0d6487798)
+
+# Show summary
+![Screenshot (3310)](https://github.com/user-attachments/assets/fff72e92-582b-4ba5-9f16-d0b22edc7e6d)
+
+# Save first then download
+![Screenshot (3311)](https://github.com/user-attachments/assets/72d6999d-4cb3-428a-8271-a4dd05147f6e)
+
+# Download data in excel format
+![Screenshot (3312)](https://github.com/user-attachments/assets/6798439c-4ca0-4841-8664-5688a1229fc1)
+
+
 ## Demo
 
 [Watch the demo video](https://drive.google.com/file/d/1IhDBBRoXl0-dQ4WYiOXD8KwlQhxfNTKQ/view?usp=drive_link)
