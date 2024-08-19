@@ -1,4 +1,4 @@
-Job Application Tracker Chrome Extension- Version 1.0
+## Job Application Tracker Chrome Extension- Version 1.1
 
 Overview
 The Job Application Tracker is a Chrome extension designed to help users keep track of their job applications across various job sites. With this extension, you can add job fields like "Indeed" or "Naukri," increment or decrement the application count, and track your progress throughout the day. At the end of the day, you can view a summary of your job applications.
@@ -40,15 +40,19 @@ View Summary:
 
 Click "Show Summary" to view the total job applications for the day.
 
+Data Export: Export job application data to a Excel format
+
+## Screenshoot
+
 ## Demo
 
-[Watch the demo video](https://drive.google.com/file/d/1IhDBBRoXl0-dQ4WYiOXD8KwlQhxf/view?usp=drive_link)
+[Watch the demo video](https://drive.google.com/file/d/1IhDBBRoXl0-dQ4WYiOXD8KwlQhxfNTKQ/view?usp=drive_link)
 
 In future versions, you can load and visualize this data on an external website.
 Future Development
 Website Integration: Load and visualize job application data on a dedicated website.
 Weekly/Monthly Summary: Track and view job applications over a week or a month.
-Data Export: Export job application data to a Word or PDF file.
+
 Contributing
 Contributions are welcome! If you have suggestions for new features, feel free to submit a pull request or open an issue.
 
