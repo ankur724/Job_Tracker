@@ -40,12 +40,9 @@ View Summary:
 
 Click "Show Summary" to view the total job applications for the day.
 
-Demo
-<video width="320" height="240" controls>
+## Demo
 
-  <source src="https://drive.google.com/file/d/1IhDBBRoXl0-dQ4WYiOXD8KwlQhxf/view?usp=drive_link" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the demo video](https://drive.google.com/file/d/1IhDBBRoXl0-dQ4WYiOXD8KwlQhxf/view?usp=drive_link)
 
 In future versions, you can load and visualize this data on an external website.
 Future Development
